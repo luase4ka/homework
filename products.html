@@ -42,10 +42,10 @@
                     </div>
                 </div>
             </header>
-            <nav class="navigation container">
+            <nav class="navigation container" id="navigation">
                 <ul class="menu">
                     <li class="menu_list"><a href="index.html" class="menu_link">Home</a></li>
-                    <li class="menu_list little"><a href="products.html" class="menu_link">Man</a>
+                    <li class="menu_list little active"><a href="products.html" class="menu_link">Man</a>
                         <div class="mega_box">
                             <div class="mega_item">
                                 <h3 class="mega_heading">Man</h3>
@@ -269,195 +269,241 @@
                     </li>
                 </ul>
             </nav>
-            <section class="banner">
-                <div class="man container">
-                    <img src="img/man.jpg" alt="man_in_shirt" class="man_in_shirt">
-                    <div class="banner_text">
-                        <h1 class="brand">THE BRAND</h1>
-                        <p class="lux">OF LUXERIOUS <span class="fashion">FASHION</span></p>
-                    </div>
+            <div class="new_arrivals">
+                <div class="for_arrivals container">
+                    <h2 class="text_arrivals">New Arrivals</h2>
+                    <nav class="directories"><a href="index.html">Home/</a><a href="products.html">Man/</a><a
+                            href="#">New
+                            arrivals</a></nav>
                 </div>
-            </section>
-            <section class="offers container">
-                <div class="left">
-                    <a href="#" class="man3">
-                        <img src="img/man3.jpg" alt="man_in_suit" class="offers_img">
-                        <span class="offer_text">Hot deal<span class="offers_text">for men</span></span>
-                    </a>
-                    <a href="#" class="purse">
-                        <img src="img/purse.jpg" alt="accesories" class="offers_img">
-                        <span class="offer_text">Luxirous & trendy<span class="offers_text">accesories</span></span>
-                    </a>
-                </div>
-                <div class="right">
-                    <a href="#" class="girl">
-                        <img src="img/girl.jpg" alt="girl_in_dress" class="offers_img">
-                        <span class="offer_text">30% offer<span class="offers_text">women</span></span>
-                    </a>
-                    <a href="#" class="kid">
-                        <img src="img/child.jpg" alt="kids_clothers" class="offers_img">
-                        <span class="offer_text">new arrivals<span class="offers_text">for kids</span></span>
-                    </a>
-                </div>
-            </section>
-            <section class="cards container">
-                <h4 class="header_cards">Fetured Items</h4>
-                <p class="header_cards_text">Shop for items based on what we featured in this week</p>
-                <div class="item_box">
-                    <div class="item">
-                        <a href="#" class="card_box">
-                            <img src="img/Layer_2.jpg" alt="product" class="card_img">
-                            <p class="card_desc">Mango People T-shirt</p>
-                            <p class="card_price">$52.00</p>
-                        </a>
-                        <div class="add_box">
-                            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
-                                class="add">
-                                <img src="img/Forma_1_copy.svg" alt="add">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
+            </div>
+            <div class="main_products container">
+                <nav class="left_menu">
+                    <details>
+                        <summary class="left_menu_list">Category</summary>
+                        <ul class="category">
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Denim</a></li>
+                            <li><a href="#">Hoodies & Sweatshirts</a></li>
+                            <li><a href="#">Jackets & Coats</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Polos</a></li>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Shorts</a></li>
+                            <li><a href="#">Sweaters & Knits</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Tanks</a></li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary class="left_menu_list">Brand</summary>
+                        <ul class="category">
+                            <li><a href="#">D&G</a></li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary class="left_menu_list">Designer</summary>
+                        <ul class="category">
+                            <li><a href="#">Dolce & Gabanna</a></li>
+                        </ul>
+                    </details>
+                </nav>
+                <section class="cards">
+                    <div class="header_cards">
+                        <div class="choose">
+                            <div class="trending_now">
+                                <h4>Trending now</h4>
+                                <button>Bohemian</button><button>Floral</button><button>Lace</button><button>Floral</button><button>Lace</button><button>Bohemian</button>
+                            </div>
+                            <div class="size">
+                                <h4>Size</h4>
+                                <label class="for_checkboxes">
+                                    <input type="checkbox" class="check-highload">
+                                    <span class="highload2">XXS</span>
+                                </label>
+                                <label class="for_checkboxes">
+                                    <input type="checkbox" class="check-highload">
+                                    <span class="highload2">XS</span>
+                                </label>
+                                <label class="for_checkboxes">
+                                    <input type="checkbox" class="check-highload">
+                                    <span class="highload2">S</span>
+                                    <label class="for_checkboxes">
+                                        <input type="checkbox" class="check-highload">
+                                        <span class="highload2">M</span>
+                                    </label>
+                                    <label class="for_checkboxes">
+                                        <input type="checkbox" class="check-highload">
+                                        <span class="highload2">L</span>
+                                    </label>
+                                    <label class="for_checkboxes">
+                                        <input type="checkbox" class="check-highload">
+                                        <span class="highload2">XL</span>
+                                        <label class="for_checkboxes">
+                                            <input type="checkbox" class="check-highload">
+                                            <span class="highload2">XXL</span>
+                            </div>
+                            <div class="price">
+                                <h4>Price</h4>
+                                <div class="filter__block filter__block--slider">
+                                    <div class="filter__head">цена изделия</div>
+                                    <div class="filter__slider">
+                                        <div id="filter__range"></div>
+                                    </div>
+                                    <div class="filter__cost table">
+                                        <div class="table-cell">
+                                            <input id="priceMin" type="text" value="52" class="form-control">
+                                        </div>
+                                        <div class="table-cell">
+                                            <input id="priceMax" type="text" value="400" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="card_box">
-                            <img src="img/Layer_3.jpg" alt="product" class="card_img">
-                            <p class="card_desc">Mango People T-shirt</p>
-                            <p class="card_price">$52.00</p>
-                        </a>
-                        <div class="add_box">
-                            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
-                                class="add">
-                                <img src="img/Forma_1_copy.svg" alt="add">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
+                        <div class="sort"></div>
+                        <div class="item_box">
+                            <div class="item">
+                                <a href="#" class="card_box">
+                                    <div class="bg1 bg3">
+                                        <img src="img/Layer_43__1_-removebg-preview.png" alt="product" class="card_img">
+                                    </div>
+                                    <p class="card_desc">Mango People T-shirt</p>
+                                    <p class="card_price">$52.00</p>
+                                </a>
+                                <div class="add_box">
+                                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
+                                        class="add">
+                                        <img src="img/Forma_1_copy.svg" alt="add">
+                                        <p class="add_text">Add to Cart</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="card_box">
+                                    <img src="img/Layer_44.jpg" alt="product" class="card_img">
+                                    <p class="card_desc">Mango People T-shirt</p>
+                                    <p class="card_price">$52.00</p>
+                                </a>
+                                <div class="add_box">
+                                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
+                                        class="add">
+                                        <img src="img/Forma_1_copy.svg" alt="add">
+                                        <p class="add_text">Add to Cart</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="card_box">
+                                    <img src="img/Layer_4.jpg" alt="product" class="card_img">
+                                    <p class="card_desc">Mango People T-shirt</p>
+                                    <p class="card_price">$52.00</p>
+                                </a>
+                                <div class="add_box">
+                                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
+                                        class="add">
+                                        <img src="img/Forma_1_copy.svg" alt="add">
+                                        <p class="add_text">Add to Cart</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="card_box">
+                                    <div class="bg1">
+                                        <img src="img/Layer_45.png" alt="product" class="card_img">
+                                    </div>
+                                    <p class="card_desc">Mango People T-shirt</p>
+                                    <p class="card_price">$52.00</p>
+                                </a>
+                                <div class="add_box">
+                                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
+                                        class="add">
+                                        <img src="img/Forma_1_copy.svg" alt="add">
+                                        <p class="add_text">Add to Cart</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="card_box">
+                                    <img src="img/Layer_46.jpg" alt="product" class="card_img">
+                                    <p class="card_desc">Mango People T-shirt</p>
+                                    <p class="card_price">$52.00</p>
+                                </a>
+                                <div class="add_box">
+                                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
+                                        class="add">
+                                        <img src="img/Forma_1_copy.svg" alt="add">
+                                        <p class="add_text">Add to Cart</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="card_box">
+                                    <div class="bg1">
+                                        <img src="img/Layer_47.png" alt="product" class="card_img">
+                                    </div>
+                                    <p class="card_desc">Mango People T-shirt</p>
+                                    <p class="card_price">$52.00</p>
+                                </a>
+                                <div class="add_box">
+                                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
+                                        class="add">
+                                        <img src="img/Forma_1_copy.svg" alt="add">
+                                        <p class="add_text">Add to Cart</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="card_box">
+                                    <img src="img/Layer_48.jpg" alt="product" class="card_img">
+                                    <p class="card_desc">Mango People T-shirt</p>
+                                    <p class="card_price">$52.00</p>
+                                </a>
+                                <div class="add_box">
+                                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
+                                        class="add">
+                                        <img src="img/Forma_1_copy.svg" alt="add">
+                                        <p class="add_text">Add to Cart</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="card_box">
+                                    <div class="bg1 bg2">
+                                        <img src="img/Layer_49-removebg-preview.png" alt="product" class="card_img">
+                                    </div>
+                                    <p class="card_desc">Mango People T-shirt</p>
+                                    <p class="card_price">$52.00</p>
+                                </a>
+                                <div class="add_box">
+                                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
+                                        class="add">
+                                        <img src="img/Forma_1_copy.svg" alt="add">
+                                        <p class="add_text">Add to Cart</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="card_box">
+                                    <div class="bg1">
+                                        <img src="img/Layer_50.png" alt="product" class="card_img">
+                                    </div>
+                                    <p class="card_desc">Mango People T-shirt</p>
+                                    <p class="card_price">$52.00</p>
+                                </a>
+                                <div class="add_box">
+                                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
+                                        class="add">
+                                        <img src="img/Forma_1_copy.svg" alt="add">
+                                        <p class="add_text">Add to Cart</p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="card_box">
-                            <img src="img/Layer_4.jpg" alt="product" class="card_img">
-                            <p class="card_desc">Mango People T-shirt</p>
-                            <p class="card_price">$52.00</p>
-                        </a>
-                        <div class="add_box">
-                            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
-                                class="add">
-                                <img src="img/Forma_1_copy.svg" alt="add">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="card_box">
-                            <img src="img/Layer_5.jpg" alt="product" class="card_img">
-                            <p class="card_desc">Mango People T-shirt</p>
-                            <p class="card_price">$52.00</p>
-                        </a>
-                        <div class="add_box">
-                            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
-                                class="add">
-                                <img src="img/Forma_1_copy.svg" alt="add">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="card_box">
-                            <img src="img/Layer_6.jpg" alt="product" class="card_img">
-                            <p class="card_desc">Mango People T-shirt</p>
-                            <p class="card_price">$52.00</p>
-                        </a>
-                        <div class="add_box">
-                            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
-                                class="add">
-                                <img src="img/Forma_1_copy.svg" alt="add">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="card_box">
-                            <img src="img/Layer_7.jpg" alt="product" class="card_img">
-                            <p class="card_desc">Mango People T-shirt</p>
-                            <p class="card_price">$52.00</p>
-                        </a>
-                        <div class="add_box">
-                            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
-                                class="add">
-                                <img src="img/Forma_1_copy.svg" alt="add">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="card_box">
-                            <img src="img/Layer_8.jpg" alt="product" class="card_img">
-                            <p class="card_desc">Mango People T-shirt</p>
-                            <p class="card_price">$52.00</p>
-                        </a>
-                        <div class="add_box">
-                            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
-                                class="add">
-                                <img src="img/Forma_1_copy.svg" alt="add">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="card_box">
-                            <img src="img/Layer_9.jpg" alt="product" class="card_img">
-                            <p class="card_desc">Mango People T-shirt</p>
-                            <p class="card_price">$52.00</p>
-                        </a>
-                        <div class="add_box">
-                            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%B7%D0%B8%D0%BD%D0%B0"
-                                class="add">
-                                <img src="img/Forma_1_copy.svg" alt="add">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="parent_browse_all">
-                    <a href="#" class="button_browse_all">
-                        <span class="text_browse_all">
-                            Browse all products</span>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-            </section>
-            <section class="big_banner container">
-                <a href="#" class="girl_banner">
-                    <img src="img/girl_banner.jpg" alt="girl_in_winter_clothers" class="img_girl">
-                    <span class="percent">30% <span class="banner_offer_text">offer</span><span class="for_women">for
-                            women</span></span>
-                </a>
-                <div class="advantages">
-                    <a href="#" class="delivery">
-                        <span class="advantages_h"><img src="img/delivery.svg" alt="delivery"
-                                class="advantages_logo"><span advantages_header>
-                                Free Delivery</span></span><span class="advantages_text">Worldwide delivery on
-                            all.
-                            Authorit
-                            tively morph next-generation innov tion with extensive models.</span>
-                    </a>
-                    <a href="#" class="delivery">
-                        <span class="advantages_h"><img src="img/sales.svg" alt="delivery" class="advantages_logo"><span
-                                advantages_header>
-                                Sales & discounts</span></span><span class="advantages_text">Worldwide delivery on
-                            all.
-                            Authorit
-                            tively morph next-generation innov tion with extensive models.</span>
-                    </a>
-                    <a href="#" class="delivery">
-                        <span class="advantages_h"><img src="img/quility.svg" alt="delivery"
-                                class="advantages_logo"><span advantages_header>
-                                Quality assurance</span></span><span class="advantages_text">Worldwide delivery on
-                            all.
-                            Authorit
-                            tively morph next-generation innov tion with extensive models.</span>
-                    </a>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
         <footer>
             <div class="bin">
@@ -545,5 +591,6 @@
         </footer>
     </div>
 </body>
+
 
 </html>
