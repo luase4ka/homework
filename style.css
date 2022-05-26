@@ -1159,6 +1159,45 @@ details[open] > summary::after {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  margin-bottom: 42px;
+}
+
+.sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 48px;
+  background-color: #f3f3f3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.sort_show {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12px;
+  border: 1px solid #ebebeb;
+  padding-left: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 8px;
+  display: block;
+  background-color: #ffffff;
+}
+
+.sorting {
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  line-height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+  background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+  margin-right: 10px;
 }
 
 .choose h4 {
