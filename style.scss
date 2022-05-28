@@ -1403,6 +1403,174 @@ input[type=range]::-webkit-slider-thumb {
     text-align: left;
 }
 
+.checkout {
+    margin-top: 59px;
+    margin-bottom: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+}
+
+.checkout details {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.checkout1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.checkout1::-webkit-details-marker {
+    display: none;
+}
+
+.checkout1::after {
+    content: '';
+}
+
+
+details[open]>.checkout1::after {
+    content: '';
+}
+
+.all-shipping-adress {
+    display: flex;
+    justify-content: space-around;
+}
+
+.log-forgot {
+    display: flex;
+}
+
+.check-head {
+    color: #222222;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.check-text {
+    color: #b3b2b2;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-bottom: 30px;
+
+    &_margin {
+        margin-bottom: 15px;
+    }
+}
+
+.check-continue {
+    display: inline-block;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 19px 54px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    margin-bottom: 79px;
+}
+
+
+.label-checkout {
+    display: inline-block;
+    color: #222222;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+
+    &_red {
+        color: #ff0d0d;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+}
+
+.for-check {
+    margin-bottom: 32px;
+}
+
+.label-checkout::after {
+    content: ' *';
+    color: #ff0d0d;
+}
+
+input[type='radio'],
+label {
+    cursor: pointer;
+}
+
+input[type='radio'] {
+    position: relative;
+    height: 14px;
+    width: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    margin-right: 14px;
+}
+
+input[type='radio']::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid black;
+}
+
+input[type='radio']:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: black;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+.input-checkbox {
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    max-width: 390px;
+    width: 90%;
+    height: 45px;
+    display: block;
+    margin-bottom: 23px;
+}
+
+.log-forgot a {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    display: flex;
+    padding-left: 32px;
+    height: 50px;
+    align-items: center;
+    text-decoration: none;
+}
+
 @media (max-width: 1024px) {
     .navstring {
         padding: 14px;
