@@ -99,13 +99,43 @@ summary::after {
     padding-left: 8px;
 }
 
-
 details[open]>summary::after {
     content: '\25B2';
 }
 
+.browse-details {
+    position: relative;
+}
+
 .browse {
     list-style-type: none;
+    background-color: white;
+    position: absolute;
+    top: 38;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    border: 1px solid #e6e6e6;
+}
+
+.browse li {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.browse li a {
+    text-decoration: none;
+    color: #898989;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.38px;
+}
+
+.browse li a:hover {
+    color: #f16d7f;
 }
 
 .navstring {
@@ -367,6 +397,11 @@ details[open]>summary::after {
     margin-bottom: 20px;
 }
 
+.man3:hover {
+    transform: scale(1.1);
+    z-index: 3;
+}
+
 .offers {
     display: flex;
     margin-bottom: 100px;
@@ -410,6 +445,11 @@ details[open]>summary::after {
     position: relative;
 }
 
+.purse:hover {
+    transform: scale(1.1);
+    z-index: 3;
+}
+
 .girl {
     display: block;
     text-decoration: none;
@@ -417,10 +457,20 @@ details[open]>summary::after {
     margin-bottom: 20px;
 }
 
+.girl:hover {
+    transform: scale(1.1);
+    z-index: 3;
+}
+
 .kid {
     display: block;
     text-decoration: none;
     position: relative;
+}
+
+.kid:hover {
+    transform: scale(1.1);
+    z-index: 3;
 }
 
 .offers_img {
@@ -624,7 +674,18 @@ details[open]>summary::after {
     padding: 18px 9px 18px 24px;
     -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
     animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    border: 1px solid transparent;
 }
+
+.button_browse_all:hover {
+    background-color: #fff;
+    border: 1px solid #f16d7f;
+}
+
+.button_browse_all:hover i {
+    color: #f16d7f;
+}
+
 
 .text_browse_all {
     color: #ffffff;
@@ -633,6 +694,10 @@ details[open]>summary::after {
     text-align: center;
     letter-spacing: 0.4px;
     align-items: center;
+}
+
+.button_browse_all:hover .text_browse_all {
+    color: #f16d7f;
 }
 
 .parent_browse_all .fa-solid {
@@ -839,6 +904,7 @@ details[open]>summary::after {
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 28px;
+    padding-right: 28px;
     opacity: 0.67;
     color: #222224;
     font-size: 14px;
@@ -851,13 +917,20 @@ details[open]>summary::after {
 .play {
     border-radius: 0 23px 23px 0;
     background-color: #f16d7f;
-    border: 0;
+    border: 1px solid transparent;
     padding: 18px 20px;
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
     line-height: 10px;
     letter-spacing: 0.35px;
+}
+
+.play:hover {
+    background-color: #fff;
+    color: #f16d7f;
+    border: 1px solid #f16d7f;
+    box-sizing: border-box;
 }
 
 .middle_footer {
@@ -921,6 +994,10 @@ details[open]>summary::after {
     line-height: 38px;
     text-decoration: none;
     padding-right: 80px;
+}
+
+.footer_nav_link:hover {
+    color: #f16d7f;
 }
 
 .bottom_footer {
@@ -1165,6 +1242,10 @@ details[open]>summary::after {
     border-right: 0;
 }
 
+.trending_now a:hover {
+    color: #ef5b70;
+}
+
 .size {
     width: $choose_width/3;
 }
@@ -1339,14 +1420,20 @@ li .fa-solid:hover {
     line-height: 13px;
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
     animation: heartbeat 1.5s ease-in-out infinite both;
+    text-decoration: none;
+}
 
+.view_all:hover {
+    color: #fff;
+    background-color: #ef5b70;
+    border: 1px solid transparent;
 }
 
 .navigation_links {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 110px;
+    flex-wrap: wrap;
 }
 
 .for_advantages {
@@ -1361,8 +1448,10 @@ li .fa-solid:hover {
 }
 
 .advantages_logo_products {
-    padding-right: 0px;
-    padding-bottom: 32px;
+    margin-right: 0px;
+    margin-bottom: 32px;
+    height: 47px;
+    width: 72px;
 }
 
 .for_products {
@@ -1481,7 +1570,7 @@ li .fa-solid:hover {
 .choose_features {
     display: flex;
     justify-content: space-around;
-    width: 54%;
+    width: 53%;
     flex-wrap: wrap;
     margin-bottom: 28px;
 }
@@ -1597,9 +1686,21 @@ li .fa-solid:hover {
     animation: vibrate-1 0.3s linear infinite both;
 }
 
+.button_single:hover {
+    background-color: #ef5b70;
+    color: #ffffff;
+    border: 1px solid transparent;
+}
+
 .add_to_cart_img {
     padding-right: 15px;
+    color: #ef5b70;
 }
+
+.button_single:hover .add_to_cart_img {
+    color: #ffffff;
+}
+
 
 .add_for_cards {
     margin-top: 0;
@@ -1783,6 +1884,8 @@ input[type='radio']:checked::after {
     height: 45px;
     display: block;
     margin-bottom: 23px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .log-forgot a {
@@ -1871,6 +1974,10 @@ input[type='radio']:checked::after {
     text-transform: uppercase;
     padding-top: 13px;
     padding-bottom: 38px;
+}
+
+.features-of-item h4:hover {
+    color: #f16d7f;
 }
 
 .features-of-item p {
@@ -2070,6 +2177,20 @@ input::-webkit-calendar-picker-indicator {
     animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
+.proceed-to-checkout:hover {
+    background-color: #ffff;
+    color: #f16d7f;
+}
+
+.directories a:hover {
+    color: #f16d7f;
+}
+
+.other-features a {
+    text-decoration: none;
+}
+
+
 @media (max-width: 1024px) {
     .navstring {
         padding: 14px;
@@ -2092,7 +2213,6 @@ input::-webkit-calendar-picker-indicator {
         right: auto;
         left: -170px;
     }
-
 
     .last:hover .mega_box {
         right: -90px;
@@ -2155,6 +2275,26 @@ input::-webkit-calendar-picker-indicator {
 
     .left_menu summary {
         width: 60%;
+    }
+
+    .advantages {
+        max-width: 40%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .advantages_text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .advantages_h {
+        font-size: 16px;
+    }
+
+    .delivery {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -2236,7 +2376,7 @@ input::-webkit-calendar-picker-indicator {
     }
 
     .email_s {
-        width: 200px;
+        width: 160px;
     }
 
     .send_to_us {
@@ -2330,5 +2470,16 @@ input::-webkit-calendar-picker-indicator {
 
     .left_menu summary {
         width: 80%;
+    }
+
+    .advantages_of_products {
+        flex-direction: column;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .play {
+        padding: 18px 10px;
+        font-size: 12px;
     }
 }
