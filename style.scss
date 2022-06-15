@@ -76,8 +76,8 @@ $choose_width: 100%;
     letter-spacing: 0.35px;
     border-radius: 3px 0 0 3px;
     border: 1px solid #e6e6e6;
-    background-color: #cdcdcc;
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+    background-color: #cdcdcc;
     padding-top: 14px;
     padding-left: 26px;
     padding-right: 15px;
@@ -94,35 +94,69 @@ summary::-webkit-details-marker {
     display: none;
 }
 
-summary::after {
+.nav_list::after {
     content: '\25BC';
     padding-left: 8px;
 }
 
-details[open]>summary::after {
+details[open]>.my_account::after {
     content: '\25B2';
+}
+
+.my_account::after {
+    content: '\25BC';
+    padding-left: 8px;
+}
+
+details[open]>.nav_list::after {
+    content: '\25B2';
+}
+
+details[open]>.nav_list {
+    background-image: linear-gradient(to bottom, #f9f9f948 0%, #f9f9f948 100%);
 }
 
 .browse-details {
     position: relative;
 }
 
-.browse {
+.for-browse:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    top: -5px;
+    transform: rotate(45deg);
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    left: 82px;
+}
+
+.for-browse {
     list-style-type: none;
     background-color: white;
     position: absolute;
     top: 38;
     left: 0;
-    width: 100%;
+    width: 262px;
     z-index: 5;
     border: 1px solid #e6e6e6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
 }
 
 .browse li {
     display: block;
-    text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.browse .mega_heading {
+    padding-left: 15px;
+    padding-right: 107px;
 }
 
 .browse li a {
@@ -132,6 +166,8 @@ details[open]>summary::after {
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0.38px;
+    padding-left: 15px;
+    padding-right: 107px;
 }
 
 .browse li a:hover {
@@ -169,11 +205,6 @@ details[open]>summary::after {
     height: 38px;
 }
 
-.basket {
-    padding-top: 9px;
-    padding-right: 26px;
-}
-
 .my_account {
     background-color: #f16d7f;
     color: #ffffff;
@@ -184,8 +215,109 @@ details[open]>summary::after {
     padding-left: 19px;
     padding-right: 18px;
     padding-top: 13px;
-    height: 100%;
+    margin-top: 31px;
+    margin-bottom: 31px;
+    height: 38px;
     box-sizing: border-box;
+}
+
+.my-cart-menu {
+    padding: 20px 17px;
+}
+
+.my-cart-menu a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.my-cart-menu i {
+    display: flex;
+    justify-content: center;
+    color: #c0c0c0;
+    align-items: center;
+}
+
+.my-cart-menu h3 {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.basket {
+    margin-top: 40px;
+    margin-bottom: 31px;
+}
+
+.little-card {
+    display: flex;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 20px;
+}
+
+.little-card img {
+    margin-right: 17px;
+}
+
+.features-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 45px;
+}
+
+.features-box h4 {
+    color: #222222;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.features-box p {
+    color: #f16d7f;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.cart-details {
+    position: relative;
+}
+
+.for-cart:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    top: -5px;
+    transform: rotate(45deg);
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    left: 90px;
+}
+
+.for-cart {
+    list-style-type: none;
+    background-color: white;
+    position: absolute;
+    top: 85px;
+    left: -80px;
+    width: 262px;
+    z-index: 5;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    display: none;
+}
+
+.cart-details:hover .for-cart {
+    display: flex;
 }
 
 .menu {
@@ -285,6 +417,7 @@ details[open]>summary::after {
 .mega_item {
     margin-right: 24px;
     width: 33.3%;
+    list-style-type: none;
 }
 
 .mega_item:last-of-type {
@@ -394,7 +527,7 @@ details[open]>summary::after {
     display: block;
     text-decoration: none;
     position: relative;
-    margin-bottom: 20px;
+    grid-row: 1/3;
 }
 
 .man3:hover {
@@ -403,15 +536,20 @@ details[open]>summary::after {
 }
 
 .offers {
-    display: flex;
     margin-bottom: 100px;
     margin-top: 98px;
+}
+
+.for-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 49.123%);
+    grid-template-rows: repeat(3, 31.485%);
+    gap: 20px;
 }
 
 .left {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
 }
 
 .right {
@@ -443,6 +581,7 @@ details[open]>summary::after {
     display: block;
     text-decoration: none;
     position: relative;
+    order: 3;
 }
 
 .purse:hover {
@@ -454,7 +593,7 @@ details[open]>summary::after {
     display: block;
     text-decoration: none;
     position: relative;
-    margin-bottom: 20px;
+    order: 2;
 }
 
 .girl:hover {
@@ -466,6 +605,7 @@ details[open]>summary::after {
     display: block;
     text-decoration: none;
     position: relative;
+    grid-row: 2/4;
 }
 
 .kid:hover {
@@ -499,6 +639,7 @@ details[open]>summary::after {
 
 .cards {
     margin-bottom: 113px;
+    margin-top: 60px;
 }
 
 .card_box {
@@ -706,15 +847,13 @@ details[open]>summary::after {
 }
 
 .big_banner {
-    display: flex;
     margin-bottom: 97px;
-    position: relative;
-    width: 100%;
 }
 
 .girl_banner {
     display: block;
     text-decoration: none;
+    position: relative;
 }
 
 .img_girl {
@@ -745,19 +884,29 @@ details[open]>summary::after {
 }
 
 .advantages {
+    position: absolute;
+    top: 0;
+    right: 0;
     background-color: #222224;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: absolute;
-    right: 0;
-    top: 0;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
     height: 100%;
     box-sizing: border-box;
-    padding-top: 48px;
-    padding-bottom: 66px;
-    width: 383px;
-    max-width: 48%;
+    width: 32.719%;
+}
+
+.for-banner {
+    display: flex;
+    position: relative;
+}
+
+.black {
+    width: 373px;
+    display: flex;
+    background-color: #222224;
 }
 
 .delivery {
@@ -1421,6 +1570,10 @@ li .fa-solid:hover {
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
     animation: heartbeat 1.5s ease-in-out infinite both;
     text-decoration: none;
+
+    &_check {
+        margin-bottom: 10px;
+    }
 }
 
 .view_all:hover {
@@ -1479,10 +1632,11 @@ li .fa-solid:hover {
 }
 
 .features {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
     margin-top: -88px;
     background-color: #fff;
     padding-top: 72px;
-    padding-bottom: 122px;
+    padding-bottom: 62px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1536,6 +1690,12 @@ li .fa-solid:hover {
     text-align: center;
     width: 54%;
     margin-bottom: 24px;
+}
+
+.features article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .matdes {
@@ -2278,7 +2438,7 @@ input::-webkit-calendar-picker-indicator {
     }
 
     .advantages {
-        max-width: 40%;
+        width: 45%;
         padding-top: 40px;
         padding-bottom: 40px;
     }
@@ -2295,6 +2455,12 @@ input::-webkit-calendar-picker-indicator {
     .delivery {
         padding-left: 30px;
         padding-right: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .advantages {
+        width: 50%;
     }
 }
 
@@ -2316,24 +2482,18 @@ input::-webkit-calendar-picker-indicator {
     }
 
     .heading {
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
         height: 100%;
         width: 100%;
-        justify-content: space-around;
+        align-items: center;
     }
 
-    .purse {
-        margin-bottom: 20px;
-    }
 
-    .left {
-        margin-right: 0px;
-    }
-
-    .offers {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 20px;
+    .logo,
+    .basket,
+    .my_account {
+        margin: 10px;
     }
 
     .little:hover .mega_box {
@@ -2361,6 +2521,14 @@ input::-webkit-calendar-picker-indicator {
         width: 100%;
         max-width: 100%;
         position: relative;
+    }
+
+    .for-banner {
+        display: block;
+    }
+
+    .black {
+        display: none;
     }
 
     .head_footer {
@@ -2481,5 +2649,17 @@ input::-webkit-calendar-picker-indicator {
     .play {
         padding: 18px 10px;
         font-size: 12px;
+    }
+
+    .my_account {
+        width: 130px;
+    }
+
+    .offer_text {
+        font-size: 10px;
+    }
+
+    .offers_text {
+        font-size: 18px;
     }
 }
